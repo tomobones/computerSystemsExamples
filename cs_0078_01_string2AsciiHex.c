@@ -1,8 +1,3 @@
-/*
- * still not working
- * only normal letters and numbers
- */
-
 #include <stdio.h>
 
 int main()
@@ -14,7 +9,7 @@ int main()
 
     int i = 0;
     char* pointer = input;
-    while (*(pointer + i) != EOF)
+    while (*(pointer + i) != 0)
     {
         printf("%.2x ", *(pointer + i));
         i++;
