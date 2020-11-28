@@ -4,7 +4,7 @@
 
 int main()
 {
-    unsigned i, j, s;
+    unsigned int i, j, s;
     printf("Check, whether unsigned numbers will overflow\n");
     printf("please enter first number:");
     scanf("%u", &i);

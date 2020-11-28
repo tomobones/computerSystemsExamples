@@ -55,10 +55,7 @@ void test_show_bytes(int val)
 
 int main()
 {
-    int val;
-
-    printf("please enter a value: ");
-    scanf("%d", &val);
-    test_show_bytes(val);
+    int number = 12345;
+    test_show_bytes(number);
     return 0;
 }
