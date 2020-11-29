@@ -58,3 +58,11 @@ bool is_little_endian()
     else
         return false;
 }
+
+unsigned replace_byte (unsigned x, int i, unsigned char b)
+{
+    unsigned x_replaced = x;
+    int index = is_little_endian() ? i : sizeof(unsigned) - 1 - i;
+    ((byte_pointer)&x_replaced)[index] = b;
+    return x_replaced;
+}
