@@ -66,3 +66,14 @@ unsigned replace_byte (unsigned x, int i, unsigned char b)
     ((byte_pointer)&x_replaced)[index] = b;
     return x_replaced;
 }
+
+bool int_shifts_are_arithmetic()
+{
+    return ((~0 << 1 ) >> 1) == ~0;
+}
+
+bool int_size_is_32()
+{
+    int one = 1;
+    return ((one << 31) && !(0xFFFFFFFF + 1));
+}
